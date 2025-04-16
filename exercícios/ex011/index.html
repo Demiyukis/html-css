@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o <a href="http://gustavoguanabara.github.io/" target="_blank" rel="external">meu repositório público no GitHub</a></p>
+    <p>Você também pode acessar o <a href="http://youtube.com/cursoemvideo/" target="_blank" rel="external">meu canal gratuito do YouTube</a></p>
+    <p>Se quiser, pode acessar o <a href="http://www.cursoemvideo.com/" target="_blank" rel="external">meu site oficial</a></p>
+    <h1>Usando links internos</h1>
+    <p>Você pode acessar a <a href="sobre.html">página sobre mim</a></p>
+    <p>Você pode acessar a <a href="contato.html">página de contato</a></p> 
+    <p>Você pode acessar a <a href="index.html">página inicial</a></p>
+    <h1>Indicando qual o idioma principal do site</h1>
+    <a href="http://www.w3schools.com/html/" hreflang="en" target="_blank" rel="external">Site da W3Schools (em Inglês)</a>
+    <h1>Mira no Alvo</h1>
+    <p>Para poder controlar onde o site de destino vai abrir, podemos usar os atributos <code>target</code> que suporta os seguintes valores:</p>
+    <ul>
+        <li><code>_blank</code>: Abre o link em uma nova janela ou aba</li>
+        <li><code>_self</code>: Abre o link na mesma janela ou aba</li>
+        <li><code>_parent</code>: Abre o link no frame pai</li>
+        <li><code>_top</code>: Abre o link no documento pai</li>
+        <li><code>nome</code>: Abre o link no frame com o nome especificado</li>
+    </ul>
+    <p>Exemplos:</p>
+    <p><a href="página2.html" target="_self">Continuar navegando no site</a></p>
+    <p><a href="http://gustavoguanabara.github.com" target="_blank">Abrir perfil Github em nova janela</a></p>
+    <h2>Esse link é seu ou de outros?</h2>
+    <p>Para indicar qual é a natureza do destino usando o atributo <code>rel</code> que aceitam vários valores, entre eles:</p>
+    <ul>
+        <li><code>next</code>: Indica que o link é para a próxima parte do documento atual</li>
+        <li><code>prev</code>: Indica que o link é para a parte anterior do documento atual</li>
+        <li><code>author</code>: Indica que é um link para o site do autor do artigo atual</li>
+        <li><code>external</code>: Indica que é um link para outro site que não faz parte do site atual</li>
+        <li><code>nofollow</code>: Indica que é um link para o site não endossado, como um link pago</li>
+    </ul>
+    <p>Exemplos:</p>
+    <p><a href="página2.html" target="_self" rel="next">Continuar navegando no site</a></p>
+    <p><a href="http://gustavoguanabara.github.com" target="_blank" rel="external">Abrir perfil GitHub em nova janela</a></p>
+    <h2>Links de download</h2>
+    <p>Existem links para efetuar downloads de materiais como PDFs, arquivos ZIP. Basta fazer o link diretamente para o arquivo que se deseja fazer download e adicionar o atributo <code>download</code> com o valor configurado para o nome do arquivo a ser baixado e o atributo <code>type</code> para indicar ao navegador que tipo de arquivo está sendo baixado.</p>
+    <p>Exemplos:</p>
+    <a href="arquivo/meuslivros.pdf" download="meulivro.pdf" type="application/pdf">Beixe o arquivo PDF do meu livro</a>
+    <p>Seguem alguns <i>media types</i> usados no nosso dia-a-dia:</p>
+    <ul>
+        <li><code>text/plain</code>: Arquivos de texto simples</li>
+        <li><code>text/html</code>: Arquivos HTML</li>
+        <li><code>text/css</code>: Arquivos CSS</li>
+        <li><code>text/javascript</code>: Arquivos JavaScript</li>
+        <li><code>image/jpeg</code>: Imagens JPEG</li>
+        <li><code>image/png</code>: Imagens PNG</li>
+        <li><code>image/gif</code>: Imagens GIF</li>
+        <li><code>audio/mpeg</code>: Arquivos de áudio MP3</li>
+        <li><code>video/mp4</code>: Arquivos de vídeo MP4</li>
+        <li><code>application/pdf</code>: Arquivos PDF</li>
+        <li><code>application/zip</code>: Arquivos ZIP</li>
+</body>
+</html>

@@ -1,0 +1,30 @@
+    @charset "UTF-8"; /* Corrige a codificação do arquivo */
+
+    body {
+        background-image: 
+            radial-gradient(circle, rgb(230, 114, 230), rgb(255, 184, 151), rgb(255, 255, 255)),
+            url('../ex016/imagem/noise04.jpg'); /* Adiciona a imagem de ruído */
+        background-attachment: fixed;
+        background-size: cover, cover; /* Ajusta o tamanho da imagem de ruído */
+        background-blend-mode: screen; /* Aplica o modo de mesclagem multiply */
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 3em;
+        color: rgba(255, 255, 255, 0.89);
+        text-align: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    h1 {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out; /* Transição suave de opacidade */
+    }
+
+    h1:hover {
+        opacity: 1; /* Aparece suavemente quando o mouse se aproxima */
+    }
+
+  
